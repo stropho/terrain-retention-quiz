@@ -1,5 +1,5 @@
 import {describe, it, expect} from '@jest/globals'
-import {getTerrainCapacity} from './command-and-conquer-terrain'
+import {getTerrainCapacity} from './divide-and-conquer-terrain'
 import {stringLinesToLengths} from './test-utils'
 
 describe('terrain-evaluator', () => {
@@ -119,9 +119,9 @@ describe('terrain-evaluator', () => {
 		})
 	})
 
-	describe('task input', () =>{
+	describe('task input', () => {
 		it('calculates capacity for example task input', () => {
-			const input = [3, 1, 4, 2, 3, 1] 
+			const input = [3, 1, 4, 2, 3, 1]
 			const expectedResult = 3
 			const actualResult = getTerrainCapacity(input)
 			expect(actualResult).toEqual(expectedResult)
