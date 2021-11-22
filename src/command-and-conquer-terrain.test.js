@@ -119,7 +119,14 @@ describe('terrain-evaluator', () => {
 		})
 	})
 
-	describe('task input', () =>
+	describe('task input', () =>{
+		it('calculates capacity for example task input', () => {
+			const input = [3, 1, 4, 2, 3, 1] 
+			const expectedResult = 3
+			const actualResult = getTerrainCapacity(input)
+			expect(actualResult).toEqual(expectedResult)
+		})
+
 		it('calculates capacity for task input', () => {
 			const input = [
 				51, 94, 91, 57, 82, 6, 94, 4, 0, 71, 10, 12, 32, 11, 49, 8, 67, 72, 1,
@@ -138,5 +145,6 @@ describe('terrain-evaluator', () => {
 			const expectedResult = 11509
 			const actualResult = getTerrainCapacity(input)
 			expect(actualResult).toEqual(expectedResult)
-		}))
+		})
+	})
 })
