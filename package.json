@@ -1,0 +1,26 @@
+{
+  "name": "water-retainer",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run test:unit",
+    "test:unit": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:tdd": "npm run test:unit -- --watch"
+  },
+  "author": "Radim",
+  "license": "ISC",
+  "devDependencies": {
+    "@jest/globals": "^27.3.1",
+    "eslint": "^8.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "jest": "^27.3.1",
+    "prettier": "^2.4.1"
+  }
+}
